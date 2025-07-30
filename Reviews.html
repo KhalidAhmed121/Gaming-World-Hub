@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reviews</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+
+  </head>
+
+  <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar bg-dark">
+    <div class="container justify-content-center">
+      <a class="navbar-brand logo-text" href="#">Gaming World Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenter">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarCenter">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="games.html">Games</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Reviews Section</h1> <br>
+  <h2>you can get the reviews of games here.</h2>
+
+  <h3>Free Fire</h3><br>
+  <h5>Review:</h5>
+  <p>Free Fire, a popular mobile battle royale game, receives mixed reviews. Some reviews on IMDb note that it offers a thrilling and fast-paced experience with intuitive controls and diverse gameplay modes, particularly praising its replay value. Other reviews on Google Play mention the game's intense nature and ability to be played in short bursts, making it a good time-waster. However, some players have reported issues with lag and ping, making the game frustrating, especially in ranked matches. Additionally, critics on Common Sense Media highlight the game's simple, almost ugly, graphics and its push for in-app purchases. </p>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Gaming World Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+// Zoom on showcase cards with delay
+document.querySelectorAll('.showcase-card').forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    card.style.transition = 'transform 0.4s ease, box-shadow 0.4s ease';
+    card.style.transform = 'scale(1.08)';
+    card.style.boxShadow = '0 0 25px rgba(0,255,213,0.4)';
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'scale(1)';
+    card.style.boxShadow = '0 0 8px rgba(0,0,0,0.1)';
+  });
+});
+
+// Navbar link neon hover animation
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('mouseover', () => {
+    link.style.transition = 'text-shadow 0.4s ease';
+    link.style.textShadow = '0 0 10px #00ffd5';
+  });
+
+  link.addEventListener('mouseout', () => {
+    link.style.textShadow = 'none';
+  });
+});
+
+// Button hover pulse animation
+document.querySelectorAll('.btn').forEach(btn => {
+  btn.addEventListener('mouseover', () => {
+    btn.style.transform = 'scale(1.1)';
+    btn.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+    btn.style.boxShadow = '0 0 20px rgba(255,94,98,0.5)';
+  });
+
+  btn.addEventListener('mouseout', () => {
+    btn.style.transform = 'scale(1)';
+    btn.style.boxShadow = '0 4px 15px rgba(255,94,98,0.4)';
+  });
+});
+</script>
+
+
+
+  </body>
+  </html>
